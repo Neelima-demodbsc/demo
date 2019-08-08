@@ -1,2 +1,2 @@
 ---
-- include: ping.yml
+- include: /roles/create_datasource/ping.yml
