@@ -1,0 +1,12 @@
+---
+- name: test datasource
+  hosts: all
+  tasks:
+   - name: test datasource
+     shell:
+       echo 'x="{{item.x}} y="{{item.y}}" z="{{item.z}}"'
+     loop:
+       { x: 'A', y: 'B', z: 'C' }
+     register: output_result
+     debug:
+      var: "the result is {{ output_result.stdout }}"
