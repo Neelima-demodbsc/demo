@@ -4,10 +4,10 @@
   tasks:
    - name: test datasource
      shell:
-       echo 'x="{{item}}"'
+       "{{item}}"
      with_items:
           - A
      register: output_result
    - name: print result
      debug:
-      msg: "the result is {{ output_result }}"
+       var: output_result
