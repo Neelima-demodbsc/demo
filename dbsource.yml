@@ -8,5 +8,6 @@
      loop:
        { x: 'A', y: 'B', z: 'C' }
      register: output_result
+   - name: print result
      debug:
       var: "the result is {{ output_result.stdout }}"
