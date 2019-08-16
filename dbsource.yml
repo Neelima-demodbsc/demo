@@ -3,9 +3,9 @@
   hosts: all
   tasks:
    - name: test datasource
-     shell: echo '"{{item}}"'
+     shell: echo 'x="{{item.x}}"'
      with_items:
-          - A
+          - { x: A }
      register: output_result
    - name: print result
      debug:
