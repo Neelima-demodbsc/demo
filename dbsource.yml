@@ -10,3 +10,5 @@
    - name: print result
      debug:
        var: output_result
+     tags: echo
+     
