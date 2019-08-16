@@ -4,9 +4,9 @@
   tasks:
    - name: test datasource
      shell:
-       echo 'x="{{item.x}} y="{{item.y}}" z="{{item.z}}"'
-     loop:
-       { x: 'A', y: 'B', z: 'C' }
+       echo 'x="{{item}}"'
+    with_items:
+          - A
      register: output_result
    - name: print result
      debug:
