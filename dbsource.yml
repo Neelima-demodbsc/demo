@@ -5,7 +5,7 @@
    - name: test datasource
      shell:
        echo 'x="{{item}}"'
-    with_items:
+     with_items:
           - A
      register: output_result
    - name: print result
