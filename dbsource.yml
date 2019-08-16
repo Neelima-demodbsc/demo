@@ -7,6 +7,8 @@
      with_items:
           - { x: A, y: B }
      register: output_result
+   - name: output to file 
+     local_action: copy content={{ output_result }} dest=/tmp/file
    - name: print result
      debug:
        var: output_result
