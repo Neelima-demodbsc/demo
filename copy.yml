@@ -1,7 +1,10 @@
 - name: create file and copy content
-  copy:
-   dest: "/tmp/test.txt"
-   content:
-     This is first line
-     This is second line
+  hosts: all
+  tasks:
+  - name: create file and copy content
+    copy:
+     dest: "/tmp/test.txt"
+     content:
+       This is first line
+       This is second line
      
