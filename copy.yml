@@ -1,12 +1,17 @@
 - name: create file and copy content
   hosts: all
+  vars:
+    mytext: |
+      Hello
+      World
   tasks:
-  - name: create file and copy content
-    copy:
-     dest: "/tmp/test.txt"
-     content:
-       This is first line
-       This is second line
-  - name: print content
-    command: cat /tmp/test.txt
+    - copy:
+        dest: /tmp/output.txt
+        content: "{{ mytext }}"
+      register: outputresult
+    - debug:
+       var: {{ outputresult.stdout }}
+       
+       
+   
      
