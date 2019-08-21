@@ -10,7 +10,7 @@
         content: "{{ mytext }}"
       register: outputresult
     - debug:
-       var: {{ outputresult.stdout }}
+       var: {{outputresult.stdout}}
        
        
    
