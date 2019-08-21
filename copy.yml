@@ -5,12 +5,14 @@
       Hello
       World
   tasks:
-    - copy:
+    - name: copy
+      copy:
         dest: /tmp/output.txt
         content: "{{ mytext }}"
-      register: outputresult
-    - debug:
-       var: {{outputresult.stdout}}
+   
+    - name: print
+      command: cat /tmp/output.txt
+  
        
        
    
