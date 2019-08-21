@@ -7,4 +7,9 @@
      content:
        This is first line
        This is second line
+     register: output
+  - name: print result
+    debug:
+     var: output
+     
      
