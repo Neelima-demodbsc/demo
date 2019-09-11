@@ -9,3 +9,6 @@
       
    - name: grep
      shell: grep -w "abc" sample.txt > output.txt
+     
+   - name: cat
+     shell: cat output.txt
