@@ -1,0 +1,11 @@
+- name: create file and copy content
+  hosts: all
+  
+  tasks:
+   - name: touch
+     file:
+      path: output.txt
+      state: touch
+      
+   - name: grep
+     shell: grep -w "abc" sample.txt > output.txt
