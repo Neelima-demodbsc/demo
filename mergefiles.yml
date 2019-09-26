@@ -2,7 +2,8 @@
   hosts: all
   
   tasks:
-   - assemble:
-     src: srcmerge
-     dest: mergefiles.txt
+   - name: mergefiles
+      assemble:
+        src: srcmerge
+        dest: mergefiles.txt
 
