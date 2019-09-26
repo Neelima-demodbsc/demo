@@ -1,4 +1,1 @@
 
-- assemble:
-    src: srcmerge
-    dest: mergefiles.txt
