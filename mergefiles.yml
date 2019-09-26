@@ -6,4 +6,7 @@
      assemble:
         src: srcmerge
         dest: mergefiles.txt
+        
+   - name: displaymerge
+     command: cat mergefiles.txt
 
