@@ -3,7 +3,7 @@
   
   tasks:
    - name: mergefiles
-      assemble:
+     assemble:
         src: srcmerge
         dest: mergefiles.txt
 
